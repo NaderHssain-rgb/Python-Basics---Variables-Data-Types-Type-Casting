@@ -1,118 +1,213 @@
-# 🐍 Python Basics
+# 🐍 Python Basics – Variables & Data Types
 
-A beginner-friendly Python project created to practice and understand the fundamental concepts of Python programming.
-
-This project covers basic topics such as variables, naming conventions, data types, type casting, user input, and simple arithmetic operations.
+This repository contains my beginner Python practice, covering **variables, naming conventions, data types, type conversion, user input, and basic arithmetic operations**.
 
 ## 📚 Topics Covered
 
-### 1. Variables
+* Variables
+* Camel Case & Snake Case
+* Data Types
+* `int`
+* `float`
+* `str`
+* `bool`
+* User Input
+* Type Conversion
+* Basic Arithmetic
+* Formatted Strings (`f-strings`)
 
-Learning how to create and use variables in Python.
+## 💻 Code Examples
 
 ```python
 num = 5
+
+#print(num)
+
+# (Camel & Snake) Case
+
+frist_name = "Nader"  # snake_case
+
+fristName = "Nader"  # camelCase
+
+#print(frist_name)
+
+#print(fristName)
+
+
+# Data Types
+
+#print(type(5))
+
+#print(type(5.6))
+
+#print(type("Nader"))
+
+#print(type(True))
+
+
+# User Input & Age Calculation
+
+# BirthYear = int(input("Enter your birth year :"))
+
+# age = 2026 - BirthYear
+
+# print(f"Your age is {age} years old")
+
+
+# Type Conversion
+
+#print(int("123"))
+
+#print(int(1.7))
+
+#print(int(True))
+
+#print(float("123"))
+
+#print(float(4))
+
+#print(float(True))
+
+#print(bool("123"))
+
+#print(bool(4))
+
+#print(bool(""))
+
+#print(bool("0"))
+
+
+# Simple Calculator
+
+# num1 = float(input("Enter num 1 :"))
+
+# num2 = float(input("Enter num 2 :"))
+
+# sum_res = num1 + num2
+
+# print(f"sum = {sum_res}")
+```
+
+## 🧠 What I Learned
+
+### Variables
+
+Variables are used to store data in Python.
+
+```python
+num = 5
+name = "Nader"
+```
+
+### Naming Conventions
+
+Python commonly uses **snake_case**:
+
+```python
 first_name = "Nader"
+```
 
-2. Naming Conventions
-Practicing different naming styles for variables:
+Camel case can also be written as:
 
-Camel Case
-Snake Case
-Example:
+```python
+firstName = "Nader"
+```
 
-firstName = "Nader"  # Camel Case
-first_name = "Nader"  # Snake Case
+> Note: The correct spelling is `first_name`, not `frist_name`.
 
-Note: In Python, snake_case is the recommended naming convention for variables and functions.
+### Data Types
 
-3. Data Types
-Learning about the basic Python data types:
+Python has several built-in data types:
 
-int
-float
-str
-bool
+```python
+int      # Integer
+float    # Decimal number
+str      # String
+bool     # Boolean
+```
 
 Examples:
 
+```python
+5          # int
+5.6        # float
+"Nader"    # str
+True       # bool
+```
+
+You can check the type of a value using:
+
+```python
+type()
+```
+
+Example:
+
+```python
 print(type(5))
-print(type(5.6))
-print(type("Nader"))
-print(type(True))
+```
 
-4. Type Casting
-Practicing how to convert values from one data type to another using:
+### Type Conversion
 
-int()
-float()
-bool()
+Python allows converting values between different data types.
+
+```python
+int("123")
+float("123")
+bool("123")
+```
+
 Examples:
 
+```python
 print(int("123"))
-print(int(1.7))
-print(int(True))
-
 print(float("123"))
-print(float(4))
-print(float(True))
-
 print(bool("123"))
-print(bool(4))
-print(bool(""))
+```
 
-5. User Input
-Learning how to get information from the user using input().
+### User Input
 
-Example:
+The `input()` function allows the user to enter data.
 
+```python
+name = input("Enter your name: ")
+```
+
+Since `input()` returns a string, we can convert the input when necessary:
+
+```python
 BirthYear = int(input("Enter your birth year: "))
+```
 
-age = 2026 - BirthYear
+### f-Strings
+
+f-strings make it easy to insert variables into strings.
+
+```python
+age = 20
 
 print(f"Your age is {age} years old")
+```
 
-6. Basic Arithmetic
-Creating a simple calculator to add two numbers.
+### Basic Arithmetic
 
+We can perform calculations using variables:
+
+```python
 num1 = float(input("Enter num 1: "))
 num2 = float(input("Enter num 2: "))
 
 sum_res = num1 + num2
 
 print(f"sum = {sum_res}")
+```
 
-🛠️ Technologies Used
-Python 3
-🎯 Project Goals
-The main goal of this project is to practice the fundamentals of Python programming and build a strong foundation for learning more advanced Python concepts.
+## 🚀 Goal
 
-🚀 How to Run
-Make sure Python 3 is installed on your computer.
-Clone this repository:
-git clone YOUR_REPOSITORY_URL
+The goal of this repository is to document my progress while learning **Python fundamentals** step by step.
 
-Navigate to the project folder:
-cd python-basics
+More Python topics and exercises will be added as I continue learning.
 
-Run the Python file:
-python main.py
+---
 
-📁 Project Structure
-python-basics/
-│
-├── main.py
-└── README.md
-
-📝 Notes
-This project is part of my journey to learn Python programming and practice the basics through simple examples and exercises.
-
-More concepts and exercises will be added as I continue learning Python.
-
-👨‍💻 Author
-Nader
-
-⭐ If you find this project useful, feel free to star the repository!
-
-
-
+⭐ **Learning Python one step at a time.**
