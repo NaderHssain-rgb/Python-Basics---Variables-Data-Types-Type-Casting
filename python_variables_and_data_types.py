@@ -1,32 +1,51 @@
-num=5
-#print(num)
+# Variables
+num = 5
+print(num)
 
-#(Camel & Snake) case
-frist_name="Nader" #camel case
-fristName="Nader" #snake case
 
-#print(frist_name)
-#print(fristName)
+# Naming conventions
+first_name = "Nader"  # Snake Case
+firstName = "Nader"   # Camel Case
 
-#print(type(5))
-#print(type(5.6))
-#print(type("Nader"))
-#print(type(True))
+print(first_name)
+print(firstName)
 
-#BirthYear=int(input("Enter your birth year :"))
-#age=2026-BirthYear
-#print(f"Your age is {age} years old")
 
-#print(int("123"))
-#print(int(1.7))
-#print(int(True))
-#print(float("123"))
-#print(float(4))
-#print(float(True))
-#print(bool("123"))
-#print(bool(4))
-#print(bool(""))
-#num1=float(input("Enter num 1 :"))
-#num2=float(input("Enter num 2 :"))
-#sum_res=num1+num2
-#print(f"sum= {sum_res}")
+# Data types
+print(type(5))        # Integer
+print(type(5.6))      # Float
+print(type("Nader"))  # String
+print(type(True))     # Boolean
+
+
+# Calculate age
+birth_year = int(input("Enter your birth year: "))
+age = 2026 - birth_year
+print(f"Your age is {age} years old.")
+
+
+# Convert values to Integer
+print(int("123"))  # String to Integer
+print(int(1.7))    # Float to Integer
+print(int(True))   # Boolean to Integer
+
+
+# Convert values to Float
+print(float("123"))  # String to Float
+print(float(4))      # Integer to Float
+print(float(True))   # Boolean to Float
+
+
+# Convert values to Boolean
+print(bool("123"))  # String to Boolean
+print(bool(4))      # Integer to Boolean
+print(bool(""))     # Empty String -> False
+
+
+# Simple calculator
+num1 = float(input("Enter number 1: "))
+num2 = float(input("Enter number 2: "))
+
+sum_result = num1 + num2
+
+print(f"Sum = {sum_result}")
